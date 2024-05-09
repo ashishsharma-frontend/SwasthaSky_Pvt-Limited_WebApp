@@ -1,0 +1,186 @@
+
+/* Contact Section */
+
+/* Styles for the main container */
+.contact-me-container {
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--primary-color); /* Setting background color */
+  }
+  
+  /* Styles for the title within the contact section */
+  .contact-title {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-top: 30px; /* Adding padding */
+  }
+  
+  /* Styles for the title text */
+  .contact-title h2 {
+    font-size: 40px; /* Setting font size */
+    font-family: var(--squada-one-font); /* Using custom font family */
+    font-weight: 400;
+  }
+  
+  /* Styles for the content container within the contact section */
+  .contact-content {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem; /* Adding padding */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px; /* Setting gap between elements */
+  }
+  
+  /* Styles for the text container */
+  .contact-me-container .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  /* Styles for the image within the text container */
+  .text img {
+    max-width: 400px;
+    width: 100%;
+    margin-top: -2.5rem; /* Adjusting margin */
+  }
+  
+  /* Styles for the heading within the contact section */
+  .contact-heading h2 {
+    font-size: 1.5rem; /* Setting font size */
+    margin-bottom: 2rem; /* Adding margin */
+  }
+  
+  /* Styles for paragraphs and spans within the contact section */
+  .contact-text-content .text .email p,
+  .number-address p,
+  p span {
+    display: flex;
+    flex-direction: row;
+    color: var(--text-color);
+    margin-bottom: 10px; /* Adding margin */
+    font-size: 1.1rem;
+  }
+  
+  /* Styles for the content container within the contact section */
+  .contact-text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px; /* Setting gap between elements */
+    color: var(--text-color);
+  }
+  
+  /* Styles for text containers */
+  .text {
+    margin-bottom: 35px; /* Adding margin */
+  }
+  
+  /* Styles for spans within text containers */
+  .text span {
+    font-weight: bold; /* Setting font weight */
+    font-size: 1.3rem;
+    margin-right: 15px; /* Adding margin */
+  }
+  
+  /* Contact Form Styling */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  /* Styles for labels within the contact form */
+  .contact-form label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px; /* Adding margin */
+  }
+  
+  /* Styles for inputs and textareas within the contact form */
+  .contact-form label input,
+  .contact-form label textarea {
+    padding: 20px 40px; /* Adding padding */
+    border: 1px solid var(--text-color); /* Setting border */
+    border-radius: 10px; /* Adding border radius */
+  }
+  
+  /* Styles for specific input fields */
+  .contact-form label:nth-child(3) input {
+    width: 100%;
+  }
+  
+  /* Styles for specific textareas */
+  .contact-form label:nth-child(4) textarea {
+    height: 180px; /* Setting height */
+  }
+  
+  /* Styles for the submit button */
+  .contact-form button {
+    background-color: var(--secondary-color); /* Setting background color */
+    color: var(--black-color); /* Setting text color */
+    width: 100%;
+    padding: 20px 40px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px; /* Adding margin */
+    border-radius: 10px; /* Adding border radius */
+    transition: all ease 500ms; /* Adding transition effect */
+    border: 1px solid var(--text-color); /* Setting border */
+  }
+  
+  /* Styles for button hover effect */
+  .contact-form button:hover {
+    background-color: var(
+      --accent-color
+    ); /* Changing background color on hover */
+    color: var(--text-color); /* Changing text color on hover */
+  }
+  
+  /* Media Queries */
+  @media (max-width: 1150px) {
+    .contact-content {
+      flex-direction: column; /* Changing direction to column */
+      align-items: center;
+    }
+  
+    .text {
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media only screen and (max-width: 750px) {
+    .contact-form label input,
+    .contact-form label textarea {
+      padding: 15px 30px; /* Adjusting padding */
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .text,
+    .office-contact p {
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+    }
+  
+    .office-contact p,
+    .office-contact .email p {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .contact-form label input,
+    .contact-form label textarea {
+      padding: 10px 20px; /* Adjusting padding */
+    }
+  }
+  

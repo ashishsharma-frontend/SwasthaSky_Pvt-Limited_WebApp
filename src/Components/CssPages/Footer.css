@@ -1,0 +1,128 @@
+/* Footer Styling */
+
+/* Styles for the main container */
+.footer-main {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styles for the container within the footer */
+.footer-container {
+  max-width: 1350px;
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid var(--text-color);
+  background: var(--gradient-background);
+  justify-content: space-between;
+  gap: 1rem; /* Setting gap between elements */
+  border-radius: 10px; /* Adding border radius */
+}
+
+/* Styles for specific sections within the footer */
+.footer-container .need-help,
+.company,
+.address {
+  display: flex;
+  max-width: 400px;
+  width: 100%;
+  gap: 1.5rem; /* Setting gap between elements */
+  padding: 40px 0;
+  flex-direction: column;
+}
+
+/* Styles for text within the footer */
+.footer-text {
+  display: flex;
+  gap: 0.8rem;
+  font-size: 1rem;
+  flex-direction: column;
+  color: var(--text-color);
+}
+
+/* Styles for headings within the footer */
+.footer-container h3 {
+  font-size: 1.5rem; /* Setting font size */
+  font-family: var(--squada-one-font); /* Using custom font family */
+}
+
+/* Styles for the footer logo */
+.footer-logo img {
+  width: 100px; /* Setting width */
+}
+
+.company a {
+  color: var(--text-color);
+}
+
+/* Styles for the copyright section */
+.copyright {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0; /* Adding padding */
+}
+
+/* Styles for text within the copyright section */
+.copyright p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  width: 100%;
+  padding: 10px; /* Adding padding */
+}
+
+.footer-social-media {
+  max-width: 1350px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer-social-media span {
+  width: 150px;
+  font-size: 1.2rem;
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  color: var(--text-color);
+  flex-direction: column;
+}
+
+/* Media Queries */
+@media (max-width: 1000px) {
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap; /* Allowing items to wrap */
+  }
+}
+
+@media (max-width: 825px) {
+  .footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-left: 0px; /* Resetting padding */
+  }
+
+  .footer-logo img {
+    margin-left: 15px; /* Adjusting margin */
+  }
+}
+
+@media (max-width: 550px) {
+  .footer-container {
+    display: none; /* Hiding footer on smaller screens */
+  }
+}

@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Freeman&family=Great+Vibes&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s ease-out;
+  scroll-behavior: smooth;
+  letter-spacing: 1px;
+  font-family: "Source Sans 3", sans-serif;
+}
+
+:root {
+  --white-color: #f9fbfc;
+  --text-color: #0e1514;
+  --primary-color: #f6fcff;
+  --secondary-color: #8b93ff;
+  --accent-color: #c9cbff;
+  --gradient-background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--accent-color)
+  );
+  --squada-one-font: "Freeman", sans-serif;
+}
+
+h3 ,
+h2,
+span {
+  font-family: var(--squada-one-font);
+  letter-spacing: 1px;
+}
+
+button {
+  padding: 15px 30px;
+  border: 1px solid black;
+  background: linear-gradient(to right, #f9fbfc 50%, #90d26d 50%);
+  background-size: 200% 100%;
+  color: var(--white-color);
+  background-position: bottom right;
+  transition: all 0.7s ease-out;
+  cursor: pointer;
+  margin-top: 2.5rem;
+}
+
+button:hover {
+  border: 2px solid #d9edbf;
+  background-position: bottom left;
+  color: var(--text-color);
+}
+
+button a {
+  color: var(--white-color);
+}
+
+button:hover a {
+  color: var(--text-color);
+}
+
+.explore-top-reused {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 0.5rem;
+  max-width: 650px;
+  width: 100%;
+  padding: 5px;
+  margin: 0 auto;
+}
+
+.explore-top-reused h3 {
+  font-size: clamp(1.3rem, 5vw, 2rem); /* Responsive font size */
+}
+
+.small-title {
+  display: flex;
+  text-align: start;
+  margin-bottom: -20px;
+  margin-top: 1rem;
+}
+
+.small-title svg {
+  padding-bottom: 10px;
+}
+
+.about-text-content .heading,
+.hms-top-text h2 {
+  margin-top: -1.5rem;
+}
+
+.service-card-container,
+.explore-main-container,
+.webapp-container,
+.download-app-container,
+.copyright,
+.footer-social-media {
+  margin-top: 2rem;
+  border-top: 1px solid black;
+  border-width: 0 10% 0 10%;
+  border-image: linear-gradient(to right, transparent, black, transparent) 1 1;
+}
+
+.explore-main-container,
+.webapp-container {
+  padding-top: 1.5rem;
+}
+
+.home-content,
+.about-content,
+.swasth-hms-intro {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+@media (max-width: 576px) {
+  .home-container,
+  .swasth-about {
+    margin-bottom: -4rem;
+  }
+
+  .swasth-hms-container {
+    margin-bottom: -3rem;
+  }
+}

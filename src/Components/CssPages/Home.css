@@ -1,0 +1,583 @@
+/* Home Section */
+
+/* Styles for the container holding home content */
+.home-container {
+  width: 100%;
+  padding: 10px;
+  min-height: 100vh;
+}
+
+/* Styles for the content within home and about sections */
+.home-content,
+.about-content,
+.swasth-hms-intro {
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 12px;
+  background: var(--gradient-background);
+}
+
+/* Styles for text content within home and about sections */
+.home-text-content,
+.about-text-content,
+.swasth-hms-intro .hms-top-text {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+/* Styles for headings within home and about sections */
+.home-text-content .heading,
+.about-text-content .heading {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* Styles for h2 headings within home and about sections */
+.home-text-content .heading h2,
+.about-text-content .heading h2,
+.hms-top-text h2 {
+  max-width: 600px;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-family: var(--squada-one-font);
+  font-weight: 400;
+  text-align: start;
+}
+
+/* Styles for paragraph text within home and about sections */
+.home-text-content .heading p,
+.about-text-content p,
+.hms-top-text p {
+  font-size: 1.1rem;
+  text-align: start;
+}
+
+/* Additional style for paragraphs within about section */
+.about-text-content p {
+  margin-bottom: -2rem;
+}
+
+/* Styles for button within home section */
+.home-text-content .btn button {
+  width: 180px;
+  margin-top: 1rem;
+}
+
+/* Styles for images within home section */
+.img-content {
+  width: 100%;
+}
+
+/* Styles for images within home section */
+.img-content img {
+  width: 100%;
+  height: auto;
+}
+
+/* Styles for images within about section */
+.about-img-content,
+.img-content {
+  max-width: 600px;
+  height: auto;
+}
+
+/* Styles for images within about section */
+.about-img-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media queries for Home Section */
+
+/* Media query for screens wider than 1150px */
+@media screen and (min-width: 1150px) {
+  .home-content,
+  .about-content,
+  .swasth-hms-intro {
+    flex-direction: row;
+  }
+
+  .home-text-content,
+  .about-text-content,
+  .swasth-hms-intro .hms-top-text {
+    width: 45%;
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+
+  .img-content {
+    width: 55%;
+  }
+}
+
+/* Media query for screens narrower than 1150px */
+@media screen and (max-width: 1150px) {
+  .home-content {
+    padding-top: 2rem;
+  }
+}
+
+/* Media query for screens narrower than 750px */
+@media screen and (max-width: 750px) {
+  .home-content {
+    margin-top: 1rem;
+    text-align: start;
+    padding: 0px;
+  }
+
+  .home-text-content {
+    width: 90%;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
+
+  .img-content {
+    width: 90%;
+  }
+
+  .home-text-content .heading p,
+  .swasth-hms-intro p {
+    font-size: 0.9rem;
+  }
+
+  .home-text-content .btn {
+    text-align: center;
+  }
+}
+
+/* Styles for the Swasth Sky Marquees section */
+.swasth-sky-marquees {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px 40px;
+  background-color: var(--secondary-color);
+  border: 5px solid var(--accent-color);
+  height: 14vh;
+  margin-top: 2rem;
+  border-radius: 10px;
+  font-size: 1.5rem;
+}
+
+/* Styles for the text within Swasth Sky Marquees section */
+.swasth-sky-marquees p {
+  color: var(--white-color);
+  margin-left: 2.5rem;
+}
+
+/* Styles for the SVG within Swasth Sky Marquees section */
+.swasth-sky-marquees svg {
+  vertical-align: middle;
+  font-size: 1.5rem;
+  margin-bottom: 3px;
+}
+
+/* Explore Section */
+
+/* Styles for the service card container */
+.service-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 0; /* Adding padding to the top and bottom */
+}
+
+/* Styles for the container holding essential services */
+.essential-services-container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+/* Styles for individual service cards */
+.essential-services-container .service-card {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+  max-width: 350px;
+  width: calc(100% / 2 - 1rem); /* Calculating width */
+  min-height: 400px;
+  padding: 20px; /* Setting minimum height */
+}
+
+/* Styles for images within service cards */
+.service-card img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Styles for headings within service cards */
+.service-card h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: var(--squada-one-font); /* Using custom font */
+  margin-bottom: 1rem;
+}
+
+/* Styles for paragraphs within service cards */
+.service-card p {
+  font-size: 1rem;
+}
+
+/* Styles for SVG icons within service cards */
+.service-card svg {
+  font-size: 1.4rem;
+}
+
+.view-more {
+  display: flex;
+  vertical-align: middle;
+  gap: 1.5rem;
+  color: blue;
+  cursor: pointer;
+}
+
+.view-more svg {
+  background: var(--gradient-background);
+  border-radius: 50%;
+  font-size: 1.5rem;
+  padding: 5px;
+}
+
+/* Media queries for Explore Section */
+
+/* Media query for screens narrower than 768px */
+@media screen and (max-width: 768px) {
+  .essential-services-container .service-card {
+    width: calc(100% - 0rem); /* Adjusting width */
+  }
+
+  .essential-services-container {
+    width: 100%;
+  }
+}
+
+/* Styles for the explore content container */
+.explore-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(
+    --white-color
+  ); /* Using custom variable for white color */
+  padding: 20px; /* Adding padding */
+}
+
+/* Styles for the explore category container */
+.explore-category {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styles for the cards within explore section */
+.explore-cards {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+}
+
+/* Styles for individual cards */
+.card {
+  flex: 0 1 calc(20% - 20px); /* Calculating flex */
+  margin: 10px;
+  padding: 20px;
+  background-color: var(
+    --primary-color
+  ); /* Using custom variable for primary color */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding box shadow */
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Adding transition effect */
+}
+
+/* Hover styles for cards */
+.card:hover {
+  transform: translateY(-5px);
+  background-color: var(
+    --accent-color
+  ); /* Using custom variable for accent color */
+}
+
+/* Media queries for Explore Section */
+
+/* Media query for screens narrower than 1024px */
+@media screen and (max-width: 1024px) {
+  .explore-heading-img img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* Media query for screens narrower than 1000px */
+@media screen and (max-width: 1000px) {
+  .card {
+    flex: 0 1 calc(50% - 20px); /* Adjusting flex */
+  }
+
+  .explore-heading-img img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .about-img-content {
+    margin-top: 2rem; /* Adding margin */
+  }
+}
+
+/* Media query for screens narrower than 500px */
+@media screen and (max-width: 500px) {
+  .explore-heading-img img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .card {
+    flex: 0 1 calc(100% - 20px); /* Adjusting flex */
+  }
+}
+
+/* Media query for screens narrower than 768px */
+@media screen and (max-width: 768px) {
+  .explore-heading-img h2 {
+    font-size: 2rem; /* Adjusting font size */
+  }
+
+  .explore-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%; /* Adjusting width */
+    margin: 10px auto; /* Adjusting margin */
+  }
+}
+
+/* Media query for screens narrower than 500px */
+@media screen and (max-width: 500px) {
+  .explore-heading-img h2 {
+    font-size: 1.5rem; /* Adjusting font size */
+  }
+
+  .explore-cards {
+    padding: 0 10px; /* Adjusting padding */
+  }
+
+  .card {
+    width: 90%; /* Adjusting width */
+  }
+}
+
+/* Styles for the bottom explore content container */
+.explore-bottom-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 5rem; /* Adding gap between items */
+  padding-top: 2rem; /* Adding padding */
+}
+
+/* Styles for the bottom image container */
+.bottom-img-content {
+  min-width: 420px;
+  max-width: 420px;
+  height: 520px;
+  overflow: hidden;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+/* Styles for images within bottom image container */
+.bottom-img-content img {
+  max-width: 420px;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-position: center;
+}
+
+/* Styles for the bottom card content container */
+.bottom-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  max-width: 700px;
+  width: 100%;
+}
+
+/* Styles for headings within bottom card content */
+.bottom-card-content h3 {
+  font-family: var(--squada-one-font); /* Using custom font */
+  font-weight: 400;
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+
+/* Styles for individual bottom cards */
+.bottom-card-content .bottom-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Adding transition effect */
+}
+
+/* Styles for active state of bottom cards */
+.bottom-card.active {
+  border: 2px solid var(--secondary-color);
+  border-radius: 12px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+/* Media query for screens narrower than 750px */
+@media screen and (max-width: 750px) {
+  .explore-bottom-content {
+    gap: 3rem; /* Adjusting gap */
+  }
+}
+
+/* Media query for screens narrower than 500px */
+@media screen and (max-width: 500px) {
+  .bottom-card-content .bottom-card {
+    padding: 15px; /* Adjusting padding */
+  }
+
+  .bottom-img-content {
+    min-width: 350px;
+    max-width: 350px;
+    height: 400px;
+  }
+}
+
+/* Web App Container */
+
+.webapp-container {
+  display: flex;
+  flex-direction: column;
+  margin: 2.5rem 0;
+}
+
+.web-app {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+
+.webapp-card {
+  max-width: 1250px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  justify-content: space-around;
+  background-color: var(--primary-color);
+}
+
+.webapp-card:nth-child(2) {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.webapp-card-image img {
+  max-width: 400px;
+  width: 100%;
+}
+
+.webapp-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 550px;
+  width: 100%;
+}
+
+@media (max-width: 1000px) {
+  .webapp-card,
+  .webapp-card:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .webapp-card-image img {
+    max-width: 700px;
+  }
+}
+
+/* ============== Downoad App Section ================= */
+
+.download-app-container {
+  width: 100%;
+  height: min-content;
+  padding: 10px;
+}
+
+.download-main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.download-app-container .download-main img {
+  max-width: 500px;
+  width: 100%;
+}
+
+.download-main .download-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 550px;
+  width: 100%;
+}
+
+.download-button {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media (max-width: 1000px) {
+  .download-main {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 400px) {
+  .download-button {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .download-button img {
+    margin-bottom: -3.5rem;
+  }
+}
